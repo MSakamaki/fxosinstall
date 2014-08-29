@@ -3,9 +3,6 @@
 
 module.exports = function (grunt) {
 
-  require('load-grunt-tasks')(grunt);
-
-  require('time-grunt')(grunt);
 
   grunt.initConfig({
     'gh-pages': {
@@ -15,5 +12,6 @@ module.exports = function (grunt) {
       src: ['**']
     }
   });
+    grunt.loadNpmTasks('grunt-gh-pages');
 };
 
